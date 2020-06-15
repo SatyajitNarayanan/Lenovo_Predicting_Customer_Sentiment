@@ -1,6 +1,10 @@
-# Lenovo Predicting Customer Sentiment
+# Lenovo -  Predicting Customer Sentiment
 
 Through this project an attempt has been made to help Lenovo predict the customer satisfaction for their products with the help of customer sentiment data. Net Promoter Score (NPS) is a key indicator of a product or company’s performance in the market.
+
+<img src="https://github.com/SatyajitNarayanan/Lenovo_Predicting_Customer_Sentiment/raw/master/images/review.png" alt="Poster Image">
+
+
 
 ## **Problem Statement**: 
 Lenovo currently uses customers’ responses to the Net Promoter Score (NPS) survey as their primary measurement of customer satisfaction, but feedback from the NPS survey results arrives rather late in the product life cycle. 
