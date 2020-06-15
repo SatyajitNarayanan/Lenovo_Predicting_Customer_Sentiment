@@ -10,7 +10,7 @@ To address the customers’ concerns in a timely fashion, Lenovo would like to u
 
 Having an NPS score would give an idea of where the product, and the company in general, stands among the public. Higher Net Promoter Scores tend to indicate a healthier business, while lower Net Promoter Scores can be an early warning to dig deeper into potential customer satisfaction and loyalty issues.
 
-##**Data:**
+## **Data:**
 The following key information was provided by Lenovo to help to identify the relationship between customer sentiment and NPS:
 * Sentiment Data: Information collected from web scrapes and third-party apps which had data regarding the following:
 	- Comment ID
@@ -25,7 +25,7 @@ The following key information was provided by Lenovo to help to identify the rel
 	- Product name & Series
 	- Additional questions like satisfaction levels with various features, service aspects, purchase process, etc.
 
-##**Methodology:**
+## **Methodology:**
 
 1. Markov Decision Process:
 
@@ -42,13 +42,13 @@ To understand the impact of development of sentiment over time on the pNPS, an E
 To calculate EOS, the distribution of sentiment in the first month should be known. The sentiment distributions across various months are then used as independent variables in the regression analysis.
 
 
-##**Prediction:**
-*Principal Component Analysis (PCA)*
+## **Prediction:**
+**Principal Component Analysis (PCA)**
 In order to eliminate issues like multicollinearity and sub optimal solutions, principle component analysis (PCA) was used to figure out values of set of linearly independent uncorrelated variables called principle components. PCA eliminated these two issues due to the orthogonal transformation property of the principle components. The components were then used as regressors to perform principle component regression. In the present context, each product type (Consumer and Commercial) had multiple taxonomy levels.
 
 
 
-Calculation of pNPS as a response variable
+**Calculation of pNPS as a response variable**
 The pNPS value for a month is calculated as cumulative subtraction of promoter % and detractor % till that month. It is assumed that the sentiments will reflect on the pNPS after a lag of five months. Also, Five-month lag provides maximum overlap between sentiment and survey data.
 After deciding the dependent and independent variables, the level of data to be used for prediction needed to be decided. Data at a Series-Month level was considered. Independent and dependent variables were calculated at this level each for Consumer and Commercial data.
 
