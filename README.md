@@ -11,14 +11,14 @@ Having an NPS score would give an idea of where the product, and the company in 
 **Data:**
 The following key information was provided by Lenovo to help to identify the relationship between customer sentiment and NPS:
 * Sentiment Data: Information collected from web scrapes and third-party apps which had data regarding the following:
-	o Comment ID
-	o Sentiments that the software recognized and allotted to various product features in that comment
-	o Levels of classification of the product features
-	o Product name
-	o Date (MM/DD/YYYY)
-	o Star Rating assigned by the customer
+	- Comment ID
+	- Sentiments that the software recognized and allotted to various product features in that comment
+	- Levels of classification of the product features
+	- Product name
+	- Date (MM/DD/YYYY)
+	- Star Rating assigned by the customer
 * Survey Data: Official survey responses to many questions important among which are:
-	o Survey ID & date (MM/DD/YYYY)
-	o Product & Brand NPS
-	o Product name & Series
-	o Additional questions like satisfaction levels with various features, service aspects, purchase process, etc.
+	- Survey ID & date (MM/DD/YYYY)
+	- Product & Brand NPS
+	- Product name & Series
+	- Additional questions like satisfaction levels with various features, service aspects, purchase process, etc.
