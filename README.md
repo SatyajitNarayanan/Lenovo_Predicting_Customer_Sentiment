@@ -41,23 +41,21 @@ A Markov decision model was developed to look at the evolution of sentiment over
 
 * Evolution of Sentiment as a predictor: (Why, how, Examples)
 
-	To understand the impact of development of sentiment over time on the pNPS, an Evolution of Sentiment (EOS) variable was created. The transition probability matrix for each product series was computed in a manner similar to P-matrix of the MDP model. Then the sentiment distribution for each series in the first month (q) was computed from the data available and the distribution in the following months was obtained using the Chapman-Kolmolgorov rule (qn = q*Pn where qn = sentiment distribution in nth epoch).
+	To understand the impact of development of sentiment over time on the pNPS, an Evolution of Sentiment (EOS) variable was created. The transition probability matrix for each product series was computed in a manner similar to P-matrix of the MDP model. Then the sentiment distribution for each series in the first month (q) was computed from the data available and the distribution in the following months was obtained using the Chapman-Kolmolgorov rule (q<sup>n</sup> = q*P<sup>n</sup> where q<sup>n</sup> = sentiment distribution in nth epoch).
 
 	To calculate EOS, the distribution of sentiment in the first month should be known. The sentiment distributions across various months are then used as independent variables in the regression analysis.
 
 
 ### **Prediction:**
 
-**Principal Component Analysis (PCA)**
-
+**Principal Component Analysis (PCA):**
 In order to eliminate issues like multicollinearity and sub optimal solutions, principle component analysis (PCA) was used to figure out values of set of linearly independent uncorrelated variables called principle components. PCA eliminated these two issues due to the orthogonal transformation property of the principle components. The components were then used as regressors to perform principle component regression. In the present context, each product type (Consumer and Commercial) had multiple taxonomy levels.
 
 
 
-**Calculation of pNPS as a response variable**
-
+**Calculation of pNPS as a response variable:**
 The pNPS value for a month is calculated as cumulative subtraction of promoter % and detractor % till that month. It is assumed that the sentiments will reflect on the pNPS after a lag of five months. Also, Five-month lag provides maximum overlap between sentiment and survey data.
 
 After deciding the dependent and independent variables, the level of data to be used for prediction needed to be decided. Data at a Series-Month level was considered. Independent and dependent variables were calculated at this level each for Consumer and Commercial data.
 
-
+### **Results:**
