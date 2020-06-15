@@ -27,12 +27,12 @@ The following key information was provided by Lenovo to help to identify the rel
 
 ## **Methodology:**
 
-1. Markov Decision Process:
+### Markov Decision Process:
 
-	A Markov decision model was developed to look at the evolution of sentiment over time and to suggest any intervention that would be beneficial.  Given the inherent uncertainties in the existing process, a stochastic model would accurately capture the development of sentiment.
+A Markov decision model was developed to look at the evolution of sentiment over time and to suggest any intervention that would be beneficial.  Given the inherent uncertainties in the existing process, a stochastic model would accurately capture the development of sentiment.
 	
 
-2. Variable selection:
+### Variable selection:
 
 *	Taxonomies as predictors: 
 
@@ -46,8 +46,7 @@ The following key information was provided by Lenovo to help to identify the rel
 	To calculate EOS, the distribution of sentiment in the first month should be known. The sentiment distributions across various months are then used as independent variables in the regression analysis.
 
 
-
-3. **Prediction:**
+### **Prediction:**
 
 	**Principal Component Analysis (PCA)**
 	
