@@ -30,12 +30,14 @@ The following key information was provided by Lenovo to help to identify the rel
 1. Markov Decision Process:
 
 	A Markov decision model was developed to look at the evolution of sentiment over time and to suggest any intervention that would be beneficial.  Given the inherent uncertainties in the existing process, a stochastic model would accurately capture the development of sentiment.
+	
 
 2. Variable selection:
 
 *	Taxonomies as predictors: 
 
 	To understand how customer sentiments, affect the pNPS, it was decided that the frequency of sentiments be used as predictors of pNPS. In order to capture the variance between taxonomies, the frequency of sentiments was broken down at a taxonomy level to be used for further analysis. Because of the high multicollinearity between taxonomies, grouping of taxonomies based on correlation and class of taxonomy was done.
+
 
 * Evolution of Sentiment as a predictor: (Why, how, Examples)
 
@@ -44,7 +46,9 @@ The following key information was provided by Lenovo to help to identify the rel
 	To calculate EOS, the distribution of sentiment in the first month should be known. The sentiment distributions across various months are then used as independent variables in the regression analysis.
 
 
+
 3. **Prediction:**
+
 	**Principal Component Analysis (PCA)**
 	
 	In order to eliminate issues like multicollinearity and sub optimal solutions, principle component analysis (PCA) was used to figure out values of set of linearly independent uncorrelated variables called principle components. PCA eliminated these two issues due to the orthogonal transformation property of the principle components. The components were then used as regressors to perform principle component regression. In the present context, each product type (Consumer and Commercial) had multiple taxonomy levels.
@@ -54,6 +58,7 @@ The following key information was provided by Lenovo to help to identify the rel
 	**Calculation of pNPS as a response variable**
 	
 	The pNPS value for a month is calculated as cumulative subtraction of promoter % and detractor % till that month. It is assumed that the sentiments will reflect on the pNPS after a lag of five months. Also, Five-month lag provides maximum overlap between sentiment and survey data.
+	
 	After deciding the dependent and independent variables, the level of data to be used for prediction needed to be decided. Data at a Series-Month level was considered. Independent and dependent variables were calculated at this level each for Consumer and Commercial data.
 
 
